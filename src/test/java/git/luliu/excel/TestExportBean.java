@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 public class TestExportBean {
@@ -20,5 +21,6 @@ public class TestExportBean {
         
         ExcelUtil.exportExcel(headers, dataset, out);
         out.close();
+
     }
 }

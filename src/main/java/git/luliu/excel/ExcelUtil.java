@@ -405,6 +405,7 @@ public class ExcelUtil {
                     Map<String, Object> map = new HashMap<String, Object>();
                     for (String k : titleMap.keySet()) {
                         Integer index = titleMap.get(k);
+                        row.getCell(index).setCellType(Cell.CELL_TYPE_STRING);
                         String value = row.getCell(index).getStringCellValue();
                         map.put(k, value);
                     }
